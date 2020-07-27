@@ -153,7 +153,18 @@ echo $num."<BR>";
 	$lang = "ru";
 	$day = 4;
 	echo "<br>".$arr[$lang][$day]; 
-
-
-	
+?>
+<br>
+<br>
+<?php
+	$a = 10;
+	if ($a == 10) {
+		echo 'Верно';
+	} else {
+		echo 'Неверно';
+	}
+	echo "<br>";
+	$a = null;
+	//Если $a пустое, то...
+	if (empty($a)) echo 'Верно!'; else echo 'Неверно!'; //выведет 'Верно!'
 ?>
