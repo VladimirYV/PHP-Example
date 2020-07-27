@@ -149,4 +149,11 @@ echo $num."<BR>";
 
 	echo "<br>".$arr['ru'][1]; 
 	echo "<br>".$arr['en'][0]; 
+
+	$lang = "ru";
+	$day = 4;
+	echo "<br>".$arr[$lang][$day]; 
+
+
+	
 ?>
