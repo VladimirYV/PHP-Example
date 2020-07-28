@@ -1,2 +1,2 @@
 # PHP-Example
-php example tasks ftom site and book
+php example tasks from site and book
