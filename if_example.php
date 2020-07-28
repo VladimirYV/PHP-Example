@@ -52,6 +52,7 @@
 			echo 'Немецкий текст';
 		}
 		echo "<br>";
+		$lang = 'en';
 		switch ($lang) {
 			case 'ru':
 				echo 'Русский текст';
@@ -166,14 +167,29 @@
 	echo "<br>";
 	echo $result;
 	
-	$year= 2020;
+	$year= 2000;
 
-	if ( (($year%4) == 0) && (($year%100) != 0) && (($year%400) == 0) ) {
+	if ( (($year%4) == 0) && (($year%100) != 0) || (($year%400) == 0) ) {
 			echo "<br> visokosniy";
 		}
 		else {
 			echo "<br> ne visokosniy";
 	
-		}
+	}
+
+	$d = "42345";
+
+	if ($d[0] == '1' or $d[0] == '2' or $d[0] == '3') {
+		echo "<br>Yes";
+	} else {
+		echo "<br>No";		
+	}
+
+	$d = "111112";
+
+	if ($d[0] + $d[1] + $d[2] == $d[3] + $d[4] + $d[5]) {
+		echo "<br>Yes";
+	} else {
+		echo "<br>No";		
 	}
 ?>
