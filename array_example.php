@@ -28,4 +28,20 @@ echo "$j: $item<br>";
 
 foreach ($p2 as $item => $description)
 echo "$item: $description<br>";
+
+while (list($item, $description) = each($p2))
+echo "$item: $description<br>";
+
+
+echo (is_array($p2)) ? "Это массив" : "Это не массив";
+echo count($p2);
+echo "<br>";
+$temp = explode(' ', "Это предложение из пяти слов");
+print_r($temp);
+
+$temp = explode('***', "Это***предложение***со***звездочками");
+print_r($temp);
+
+$item = end($p2);
+echo $item;
 ?>
