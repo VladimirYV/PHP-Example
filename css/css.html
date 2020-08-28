@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Здравствуй, мир!</title>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' type='text/css' href='styles.css'>
+    <style>
+     h1 { color:red; font-size:3em; font-family:Arial; }
+     p { font-family:"Times New Roman", Georgia, serif; }
+     #welcome { font-style:italic; color:blue; }
+     ol ol { list-style-type:lower-alpha; }
+     p > b { color:red; }
+     div, span { border:1px solid black; }
+      div { background-color:yellow; }
+      span { background-color:cyan; }
+    </style>
+  </head>
+  <body>
+    <p><i><b>Привет</b> всем</i></p>
+    <h1>Всем привет</h1>
+    <div style='font-style:italic; color:blue;'>Всем привет</div>
+    <div id='welcome'>Всем привет</div>
+    <ol>
+      <li>Один</li>
+      <li>Два</li>
+      <li>Три
+      <ol>
+      <li>Один</li>
+      <li>Два</li>
+      <li>Три</li>
+      </ol>
+      </li>
+      </ol>
+      <div>Этот текст находится внутри тега div</div>
+А этот — нет. <div>А этот снова внутри тега div.</div><br>
+<span> Этот текст находится внутри тега span.</span>
+А этот — нет. <span> А этот снова внутри тега span.</span><br><br>
+<div>Это более объемный текст в теге div, который переносится
+на следующую строку браузера </div><br>
+<span> Это более объемный текст в теге span, который переносится
+на следующую строку браузера </span>
+  </body>
+</html>
